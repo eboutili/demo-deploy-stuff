@@ -5,8 +5,8 @@ yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce
 yum install -y docker-ce # latest version
 systemctl enable docker
 systemctl start docker
-docker-compose_version=1.23.2
-curl -L https://github.com/docker/compose/releases/download/${docker-compose_version}/docker-compose-`uname -s`-`uname -m` \
+compose_version=1.23.2
+curl -L https://github.com/docker/compose/releases/download/${compose_version}/docker-compose-`uname -s`-`uname -m` \
   -o /bin/docker-compose && \
   chmod +x /bin/docker-compose
 
